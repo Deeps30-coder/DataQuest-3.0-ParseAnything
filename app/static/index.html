@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ParseAnything turns PDFs, scanned pages, images and Office files into clear text, tables and structured data." />
+  <meta name="theme-color" content="#102334" />
+  <title>ParseAnything - Document Intelligence</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">Parse<span>Anything</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" type="button">&#9776;</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#about">About</a>
+        <a href="#dashboard" class="btn btn-primary btn-small">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-inner fade-in">
+        <p class="badge">Made for DataQuest 3.0</p>
+        <h1>ParseAnything</h1>
+        <p class="subtitle">AI-Powered Document Intelligence</p>
+        <p class="tagline">Upload your documents. Extract the information. Understand it faster.</p>
+        <p class="hero-text">
+          Upload your documents and quickly pull out the information you need.
+          ParseAnything turns complex files into clear, easy-to-read results.
+        </p>
+        <div class="hero-buttons">
+          <a href="#dashboard" class="btn btn-primary">Get Started</a>
+          <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section" id="problem">
+      <div class="container">
+        <h2 class="section-title">The Problem</h2>
+        <p class="section-text">
+          Important information is often hidden inside PDFs, images, reports and other documents.
+          Finding that information by hand takes time and effort.
+        </p>
+      </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="section alt" id="solution">
+      <div class="container">
+        <h2 class="section-title">Our Solution</h2>
+        <p class="section-text">
+          ParseAnything reads your document, pulls out the text and tables, and keeps everything
+          in the right order. You get the results without scrolling through every page.
+        </p>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps">
+          <div class="card step fade-in">
+            <span class="step-num">1</span>
+            <h3>Upload</h3>
+            <p>Choose one or more PDFs, scans, images, Word, Excel or PowerPoint files.</p>
+          </div>
+          <div class="card step fade-in">
+            <span class="step-num">2</span>
+            <h3>Parse</h3>
+            <p>We read the text and tables. Scanned pages go through OCR.</p>
+          </div>
+          <div class="card step fade-in">
+            <span class="step-num">3</span>
+            <h3>Analyze</h3>
+            <p>We put the content in reading order and score how sure we are of each part.</p>
+          </div>
+          <div class="card step fade-in">
+            <span class="step-num">4</span>
+            <h3>Get Results</h3>
+            <p>See a readable view, the raw JSON, or each block one by one.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section alt" id="features">
+      <div class="container">
+        <h2 class="section-title">Key Features</h2>
+        <div class="grid">
+          <div class="card fade-in">
+            <div class="icon">&#128196;</div>
+            <h3>Many File Types</h3>
+            <p>Works with PDFs, scanned pages, images, Word, Excel and PowerPoint files, old and new.</p>
+          </div>
+          <div class="card fade-in">
+            <div class="icon">&#128221;</div>
+            <h3>Text Extraction</h3>
+            <p>Gets text from normal PDFs. Reads text from scanned pages with OCR.</p>
+          </div>
+          <div class="card fade-in">
+            <div class="icon">&#128202;</div>
+            <h3>Table Detection</h3>
+            <p>Finds tables in PDFs, Word and PowerPoint files, and turns Excel sheets into rows you can use.</p>
+          </div>
+          <div class="card fade-in">
+            <div class="icon">&#128200;</div>
+            <h3>Smart Layout</h3>
+            <p>Keeps text in the order a person would read it, even on two-column pages.</p>
+          </div>
+          <div class="card fade-in">
+            <div class="icon">&#127919;</div>
+            <h3>Confidence Scores</h3>
+            <p>Every piece of text gets a score, so you know which parts to trust.</p>
+          </div>
+          <div class="card fade-in">
+            <div class="icon">&#128161;</div>
+            <h3>Clear Results</h3>
+            <p>Get Markdown for reading or JSON for code, with page and location details.</p>
+          </div>
+        </div>
+
+        <div class="formats fade-in">
+          <h3>Supported formats</h3>
+          <div class="chips">
+            <span>PDF</span><span>Scanned PDF</span><span>PNG</span><span>JPG / JPEG</span>
+            <span>TIFF</span><span>HEIC</span><span>BMP</span><span>DOC / DOCX</span>
+            <span>XLS / XLSX</span><span>CSV</span><span>PPT / PPTX</span><span>TXT</span>
+            <span>Markdown</span><span>HTML</span><span>RTF</span><span>EML (email)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="section" id="dashboard">
+      <div class="container">
+        <h2 class="section-title">Try It Now</h2>
+        <p class="section-text">Upload one or more files and see what ParseAnything finds in each one.</p>
+
+        <div class="upload-box" id="dropZone">
+          <div class="upload-icon">&#11014;</div>
+          <p><strong>Drop your files here</strong></p>
+          <p class="muted">or</p>
+          <button class="btn btn-primary" id="chooseBtn" type="button">Choose files</button>
+          <input type="file" id="fileInput" multiple hidden
+                 accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.ppt,.pptx,.txt,.md,.markdown,.html,.htm,.rtf,.eml,.png,.jpg,.jpeg,.tif,.tiff,.bmp,.heic" />
+          <p class="muted small">Each file is checked by its contents, not just its name.</p>
+        </div>
+
+        <div class="queue card" id="queueBox" hidden>
+          <div class="queue-head">
+            <h4 id="queueTitle">Files ready to parse</h4>
+            <button class="btn btn-outline btn-small" id="clearBtn" type="button">Clear all</button>
+          </div>
+          <ul id="queueList" class="queue-list"></ul>
+          <div class="parse-bar">
+            <label class="toggle">
+              <input type="checkbox" id="saveToggle" checked />
+              Save results to the outputs folder
+            </label>
+            <button class="btn btn-primary" id="parseBtn" type="button">Parse all files</button>
+          </div>
+        </div>
+
+        <p class="status" id="statusMsg" role="status"></p>
+
+        <div class="batch" id="batch"></div>
+
+        <div class="card note">
+          <h4>Good to know</h4>
+          <p>
+            ParseAnything does not read charts or math formulas yet. Those parts are
+            flagged for review instead of being guessed. Old .doc, .xls and .ppt files
+            need LibreOffice installed on the server.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section class="section alt" id="technology">
+      <div class="container">
+        <h2 class="section-title">Built With</h2>
+        <p class="section-text">These are the tools the project actually uses.</p>
+        <div class="tech-grid">
+          <div class="card tech"><h4>FastAPI</h4><p>The API that accepts uploads and returns results.</p></div>
+          <div class="card tech"><h4>Streamlit</h4><p>The simple demo screen that talks to the API.</p></div>
+          <div class="card tech"><h4>PyMuPDF</h4><p>Reads text and positions from PDF pages.</p></div>
+          <div class="card tech"><h4>pdfplumber</h4><p>Finds tables inside PDFs.</p></div>
+          <div class="card tech"><h4>Tesseract OCR</h4><p>Reads text from scanned pages and images.</p></div>
+          <div class="card tech"><h4>Pillow</h4><p>Opens and prepares image files for OCR.</p></div>
+          <div class="card tech"><h4>python-docx</h4><p>Reads Word files.</p></div>
+          <div class="card tech"><h4>openpyxl</h4><p>Reads Excel spreadsheets.</p></div>
+          <div class="card tech"><h4>python-pptx</h4><p>Reads PowerPoint slides.</p></div>
+          <div class="card tech"><h4>Pydantic</h4><p>Checks that results follow one clear format.</p></div>
+          <div class="card tech"><h4>LibreOffice (optional)</h4><p>Converts old .doc, .xls and .ppt files to newer formats.</p></div>
+          <div class="card tech"><h4>Docker</h4><p>Runs the whole project in one container.</p></div>
+          <div class="card tech"><h4>HTML, CSS, JavaScript</h4><p>The web page you are looking at now.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section class="section" id="impact">
+      <div class="container">
+        <h2 class="section-title">Why It Helps</h2>
+        <div class="grid">
+          <div class="card fade-in">
+            <h3>Less copying</h3>
+            <p>Pull text and tables out of a file instead of typing them in by hand.</p>
+          </div>
+          <div class="card fade-in">
+            <h3>Searchable scans</h3>
+            <p>Turn scanned pages into text you can read and search.</p>
+          </div>
+          <div class="card fade-in">
+            <h3>Easy to check</h3>
+            <p>Unclear parts are flagged, so you know exactly where to look again.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section alt" id="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p class="section-text">
+          ParseAnything is a student project made for DataQuest 3.0. It helps people get
+          information out of documents without copying it by hand. Everything runs on your
+          own computer, so you don't need a paid cloud service.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="logo">Parse<span>Anything</span></p>
+      <p class="muted small">AI-Powered Document Intelligence &middot; Made for DataQuest 3.0</p>
+      <p class="muted small">&copy; 2026 ParseAnything Team</p>
+    </div>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
